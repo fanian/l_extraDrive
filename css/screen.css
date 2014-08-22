@@ -84,7 +84,7 @@ input::placeholder { font-size: 16px; color: #787878; }
 .menu:after { content: " "; display: table; clear: both; }
 .menu nav { padding-top: 20px; *zoom: 1; }
 .menu nav:after { content: " "; display: table; clear: both; }
-.menu nav ul { font-size: 18px; display: inline-block; font-family: "conv_pfdintextcondpro-lightital"; color: white; }
+.menu nav ul { float: left; font-size: 18px; display: inline-block; font-family: "conv_pfdintextcondpro-lightital"; color: white; }
 .menu nav ul li { display: inline-block; margin-right: 16px; padding-right: 18px; border-right: solid 1px; line-height: 1.2em; }
 .menu nav ul li:last-child { margin-right: 0; border-right: none; }
 .menu nav ul li a { color: inherit; border-bottom: solid 1px; text-decoration: none; }
