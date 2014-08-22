@@ -108,7 +108,7 @@ input
           text-decoration: none
 
           &.is-active
-            border-bottom: solid 2px
+            border-bottom: solid 3px
 
 
     .menu_contacts
@@ -344,10 +344,137 @@ header
       .text
         font-size: 16px
         width: 450px
+.profit
+  margin-top: 40px
+  background: url(../img/profit_bg.jpg) center no-repeat
+  +background-size(cover)
+  height: 340px
+  .title
+    padding-top: 70px
+    color: #ffffff
+  .profit_in
+    @extend %in
+    margin-top: 30px
+  .profit_item
+    width: 305px
+    display: inline-block
+    vertical-align: top
+    margin-right: 25px
+    &:last-child
+      margin-right: 0
+    .item_img
+      display: inline-block
+      width: 160px
+      height: 160px
+      border: solid 1px #ffffff
+      +border-radius(50%)
+      img
+        padding-top: 44px
+        display: table
+        margin: 0 auto
+    .item_text
+      width: 120px
+      font-family: 'roboto_condensedlight'
+      color: #ffffff
+      font-size: 16px
+      display: inline-block
+      padding-top: 40px
+      vertical-align: top
+      padding-left: 20px
 
+.work
+  .title
+    padding-top: 60px
+  .work_in
+    @extend %in
+    +clr
+    margin-top: 40px
+    .item
+      width: 200px
+      display: inline-block
+      position: relative
+      float: left
+      margin-right: 40px
+      &:last-child
+        margin-right: 0
+      &:first-child
+        margin-top: -7px
+        &:before
+          background: none
+
+      &:nth-child(2)
+        margin-top: 5px
+      &:before
+        position: absolute
+        content: ""
+        background: url(../img/arrow.png)
+        width: 20px
+        height: 20px
+        bottom: 70px
+        left: -30px
+
+
+
+    .textblock
+      width: 176px
+      height: 160px
+      +border-radius(10px)
+      +background-clip(padding-box)
+      border: 2px solid #e5e5e5
+      font-size: 18px
+      font-family: "roboto_condensedlight"
+      text-align: center
+      padding-left: 10px
+      padding-right: 10px
+      display: table
+      .tablecell
+        display: table-cell
+        vertical-align: middle
+    .icon
+      display: block
+      img
+        display: block
+        margin: 0 auto 20px
+    a
+      display: inline-block
+      +border-radius(30px)
+      +background-clip(padding-box)
+      background: #bd0909
+      +box-shadow(inset 0 -3px 0 rgba(70,130,10,.25))
+      +background-image(linear-gradient(to top, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%))
+      font-family: "roboto_condensedlight"
+      font-size: 18px
+      color: #32550a
+      text-align: center
+      text-decoration: none
+      height: 60px
+      line-height: 3em
+      margin-top: 20px
+      padding-left: 40px
+      padding-right: 40px
+      &:hover
+        +background(linear-gradient(to top, #e5ffc7 0%, #c7ff81 35%, #59bd09 100%))
+
+.bottom
+  @extend header
+  margin-top: -95px
+  background: url(../img/bottom_bg.jpg) center no-repeat
+  +background-size(cover)
+  height: 830px
+  .title
+    padding-top: 190px
+  .title-bold
+    padding-top: 0
 
 
 footer
+  box-sizing: border-box
+  height: 90px
+  @extend %in
+  text-align: center
+  padding-top: 15px
+  p
+    font-size: 16px
 
 
 

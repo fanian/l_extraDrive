@@ -3,8 +3,8 @@ head.ready(function() {
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
 	// });
-    $('#form1').validate();
-    $('#form2').validate();
+    $('#form1 form').validate();
+    $('#form2 form').validate();
 
   //add css class to cycle slider item, when clicking
   jQuery(document).ready(function($){
@@ -39,11 +39,15 @@ head.ready(function() {
             var id = $(this).attr('id');
             var top = ($('.page').offset().top - 80);
             if( $(window).scrollTop() >= (pos - 79)){
-                $('.js-nav li').removeClass('is-active');
-                $('[href = #'+id+']').parent().addClass('is-active');
+                //$('.js-nav li').removeClass('is-active');
+                $('.js-nav li a').removeClass('is-active');
+                //$('[href = #'+id+']').parent().addClass('is-active');
+                $('[href = #'+id+']').addClass('is-active');
             }
             if($(window).scrollTop() < top){
-                $('.js-nav li').removeClass('is-active');
+                //$('.js-nav li').removeClass('is-active');
+                $('.js-nav li a').removeClass('is-active');
+
             }
         });
     }
