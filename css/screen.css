@@ -181,3 +181,5 @@ header .form_in .form_left .price p span, .bottom .form_in .form_left .price p s
 
 footer { box-sizing: border-box; height: 90px; text-align: center; padding-top: 15px; }
 footer p { font-size: 16px; }
+footer p a { color: inherit; }
+footer p a:hover { text-decoration: none; }
