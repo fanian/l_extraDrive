@@ -1,0 +1,286 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+//          +sized-sprite($icons, coderiver) //or
+// 			+s(codedby) //gets default value for spritemap as $icons
+// ### animation example
+//     +include keyframes(rotate)
+//        from
+//           +rotate(0)
+//        to
+//           +rotate(360)
+// ## animation usage
+//     body:hover
+// 	    +animation(rotate 200s linear infinite)
+// ## animations easing, see easings.net for full list and examples, tnx @ai
+//     transition: all 1.2s ceaser($ease-in)
+// ## gradient example
+//     +background-image(linear-gradient(#232323, #5c5c5c));
+//     +g(#232323, #5c5c5c);
+//	   horizontal
+//     +gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +min-screen(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts 
+// Save fonts to /css/fonts, after that write (eot, woff, ttf):
+// +font(book, cytiapro-black-webfont)  
+// =book
+// 	font-family: "book", Arial, sans-serif 
+// insert pics into css
+// div
+// 	+pic("blabla.png")
+// span
+// 	+png(blabla)
+// p
+// 	+jpg(bla)
+
+
+//body
+//  font-family: Arial, sans-serif
+//  font-size: 12px
+//  line-height: 1.4
+
+.form
+  width: 340px
+  +border-radius(5px)
+  +background-clip(padding-box)
+  background: rgba(#dbf99f, .7)
+  height: 500px
+
+  .caption
+    height: 220px
+
+    h3
+      margin-top: 0
+      margin-bottom: 0
+      font-family: "conv_pfagoraslabpro-reg"
+      font-size: 36px
+      text-align: center
+    h4
+      margin-top: 0
+      margin-bottom: 15px
+      font-size: 24px
+      text-align: center
+      font-weight: normal
+      line-height: 1em
+
+.frm
+  height: 257px
+  padding-top: 10px
+  form
+    input
+      padding-left: 14px
+      width: 240px
+      height: 50px
+      background: #ffffff
+      display: block
+      font-size: 16px
+      margin: auto auto 10px
+      @include box-shadow(1px 2px 2px rgba(0,0,0,.8))
+      +border-radius(5px)
+      +background-clip(padding-box)
+
+    .button
+      +border-radius(30px)
+      width: 240px
+      height: 70px
+      display: block
+      color: #32550a
+      margin: 12px auto auto
+      font-family: 'conv_pfagoraslabpro-meditalic'
+      font-size: 24px
+      +background-clip(padding-box)
+      +box-shadow(inset 0 -3px 0 rgba(70,130,10,.25))
+      background: #95d131
+      +background(linear-gradient(to bottom, #e5ffc7 0%, #c7ff81 64.99%, #59bd09 100%))
+
+      &:hover
+        +background(linear-gradient(to bottom, #59bd09 0%, #c7ff81 64.99%, #e5ffc7 100%))
+  h3
+    font-family: "conv_segoeprintregular"
+    text-align: center
+    font-size: 14px
+    margin-top: 10px
+    letter-spacing: -1px
+
+  h4
+    font-size: 24px
+    text-align: center
+    span
+      font-family: "conv_pfdintextcondpro-medium"
+
+
+.counter
+  width: 285px
+  margin: auto auto 0
+  display: block
+  text-align: center
+
+  p
+    margin-bottom: 5px
+    margin-top: 3px
+    font-size: 14px
+    position: static
+    font-family: 'conv_segoeprintregular'
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    display: inline-block
+
+    li
+      float: left
+      margin: 0 15px
+      text-align: center
+      position: relative
+
+      span
+        +text-shadow(1px 1px 1px rgb(0, 0, 0))
+        display: block
+        font-size: 36px
+        padding-top: 20px
+        padding-bottom: 20px
+        padding-right: 1px
+        width: 60px
+        font-family: 'conv_pfagoraslabpro-bold'
+        color: #ffffff
+        @include border-radius(5px)
+        @include background-clip(padding-box)
+        background: #814f27
+        +box-shadow(inset 0 -5px 0 rgba(0,0,0,.3))
+        +background(linear-gradient(to bottom, #595959 0%, #131313 39.7%, #777 60.01%, #595959 100%))
+
+        &:after
+          position: absolute
+          content: ""
+          +background(linear-gradient(to bottom, #000 0%, rgba(20,20,20,0) 100%))
+          width: 60px
+          height: 3px
+          left: 0
+          top: 44px
+
+
+// common blocks      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
